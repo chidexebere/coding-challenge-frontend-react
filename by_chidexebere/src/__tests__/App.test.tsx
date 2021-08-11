@@ -2,11 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
 
 describe('<App />', () => {
   test('should display a heading, a search box, a list of product on the market place web page and a button', async () => {
