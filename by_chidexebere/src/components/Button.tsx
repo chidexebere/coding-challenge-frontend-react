@@ -7,15 +7,23 @@ interface ButtonProps extends ComponentProps<'button'> {
   isDisabled?: boolean;
   /** standard children prop: accepts any valid React Node */
   children?: React.ReactNode;
+  /** type of button*/
+  variant?: string;
 }
 
 const Button = ({
   handleClick,
   isDisabled,
   children,
+  variant,
 }: ButtonProps): JSX.Element => {
+  const computedClass = variant ? `button ${variant}` : `button`;
   return (
-    <button disabled={isDisabled} className="button" onClick={handleClick}>
+    <button
+      disabled={isDisabled}
+      className={computedClass}
+      onClick={handleClick}
+    >
       {children}
     </button>
   );

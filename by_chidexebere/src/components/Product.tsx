@@ -14,8 +14,8 @@ const Product = ({
       <img
         src={productImageUrl}
         loading="lazy"
-        width="64"
-        height="64"
+        width="180"
+        height="180"
         alt={productName}
       />
       <p className="">{productName}</p>

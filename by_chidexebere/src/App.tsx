@@ -7,15 +7,29 @@ import Main from './layout/Main';
 function App(): JSX.Element {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [data, setData] = useState<ResponseObject>();
+  const [data, setData] = useState<ResponseObject>({
+    statusCode: 0,
+    requestId: '',
+    status: '',
+    logStreamName: '',
+    data: {
+      data: [],
+      meta: {
+        hasMoreData: true,
+        cursor: 0,
+      },
+    },
+  });
 
   const getData = async (cursor: number, limit: number) => {
-    let newData;
+    let newData: ResponseObject;
     // setIsError(false);
     setIsLoading(true);
     try {
       newData = await fetchData(cursor, limit);
-      setData(newData);
+      // setData(...data, ...newData);
+      setData((prevData) => Object.assign({}, prevData, newData));
+      // setData(Object.assign({}, data, newData));
     } catch (error) {
       setIsError(true);
     }
@@ -26,14 +40,28 @@ function App(): JSX.Element {
     getData(0, 10);
   }, []);
 
-  const products = data?.data.data;
-  const hasMoreProduct = data?.data.meta.hasMoreData;
+  const loadMoreProducts = () => {
+    getData(0, products.length + 10);
+  };
+
+  const products = data.data.data;
+  const hasMoreProduct = data.data.meta.hasMoreData;
+  const dataLimit = 10;
+  const pages = Math.ceil(products.length / dataLimit);
 
   return (
     <div className="App">
       <Header />
-      <Main products={products} />
-      <Footer hasMoreProduct={hasMoreProduct} getData={getData} />
+      <Main
+        products={products}
+        hasMoreProduct={hasMoreProduct}
+        pages={pages}
+        dataLimit={dataLimit}
+      />
+      <Footer
+        hasMoreProduct={hasMoreProduct}
+        loadMoreProducts={loadMoreProducts}
+      />
     </div>
   );
 }

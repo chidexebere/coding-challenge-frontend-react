@@ -2,15 +2,14 @@ import React from 'react';
 import Button from '../components/Button';
 
 interface FooterProps {
-  hasMoreProduct: boolean | undefined;
-  getData: (cursor: number, limit: number) => void;
+  hasMoreProduct: boolean;
+  loadMoreProducts: () => void;
 }
 
-const Footer = ({ hasMoreProduct, getData }: FooterProps): JSX.Element => {
-  const loadMoreProducts = () => {
-    getData(0, 20);
-  };
-
+const Footer = ({
+  hasMoreProduct,
+  loadMoreProducts,
+}: FooterProps): JSX.Element => {
   return (
     <footer className="">
       {hasMoreProduct && (
