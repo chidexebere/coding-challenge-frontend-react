@@ -8,9 +8,19 @@ interface MainProps {
   hasMoreProduct: boolean;
   pages: number;
   dataLimit: number;
+  searchValue?: string | number;
+  isLoading: boolean;
+  isError: boolean;
 }
 
-const Main = ({ products, pages, dataLimit }: MainProps): JSX.Element => {
+const Main = ({
+  products,
+  pages,
+  dataLimit,
+  searchValue,
+  isLoading,
+  isError,
+}: MainProps): JSX.Element => {
   const pageLimit = 5;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -22,8 +32,8 @@ const Main = ({ products, pages, dataLimit }: MainProps): JSX.Element => {
     setCurrentPage((page) => page - 1);
   };
 
-  const changePage = (e: React.MouseEvent) => {
-    const { textContent } = e.target as HTMLElement;
+  const changePage = (event: React.MouseEvent) => {
+    const { textContent } = event.target as HTMLElement;
     const pageNumber = Number(textContent);
     setCurrentPage(pageNumber);
   };
@@ -45,11 +55,29 @@ const Main = ({ products, pages, dataLimit }: MainProps): JSX.Element => {
     return pageGroup;
   };
 
+  console.log(products);
+  console.log(searchValue);
+  console.log(isError);
+  console.log(isLoading);
+
   return (
-    <>
+    <main>
+      {isLoading && (
+        <div className="">
+          <p className="">Loading ...</p>
+        </div>
+      )}
+
+      {isError && (
+        <div className="">
+          <p className="">Something went wrong, can not get product list</p>
+          <p className="">Please check your internet connection</p>
+        </div>
+      )}
+
       {/* shows 10 posts on initial render */}
-      {pages === 1 && (
-        <main className="">
+      {!isLoading && !isError && pages === 1 && (
+        <>
           {products.map((product) => (
             <Product
               key={product.id}
@@ -57,11 +85,11 @@ const Main = ({ products, pages, dataLimit }: MainProps): JSX.Element => {
               productImageUrl={product.images[0].object_url}
             />
           ))}
-        </main>
+        </>
       )}
 
       {/* show the pages, 10 posts at a time */}
-      {pages > 1 && (
+      {!isLoading && !isError && pages > 1 && (
         <div>
           <div className="">
             {getPaginatedData().map((product) => (
@@ -82,7 +110,27 @@ const Main = ({ products, pages, dataLimit }: MainProps): JSX.Element => {
           />
         </div>
       )}
-    </>
+
+      {!isLoading && !isError && searchValue !== '' && products === [] && (
+        <div>
+          <div>
+            <svg
+              className="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <p>No result found for {searchValue} product</p>
+        </div>
+      )}
+    </main>
   );
 };
 
