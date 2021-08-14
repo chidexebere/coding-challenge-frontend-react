@@ -1,0 +1,24 @@
+.App {
+  padding: 3rem 6rem;
+}
+
+.main {
+  padding: 3rem 0;
+}
+
+.products__cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+  @include tablet {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

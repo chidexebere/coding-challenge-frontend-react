@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData, ResponseData, ResponseObject } from './api/fetchData';
+import './styles/App.scss';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Main from './layout/Main';

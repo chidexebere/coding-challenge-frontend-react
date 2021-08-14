@@ -8,9 +8,11 @@ interface HeaderProps {
 
 const Header = ({ handleSearch, searchValue }: HeaderProps): JSX.Element => {
   return (
-    <header className="">
-      <h1>Concular Market Place</h1>
-      <SearchBar searchValue={searchValue} handleSearch={handleSearch} />
+    <header className="header">
+      <h1 className="header__title">Concular Market Place</h1>
+      <div className="header__search">
+        <SearchBar searchValue={searchValue} handleSearch={handleSearch} />
+      </div>
     </header>
   );
 };

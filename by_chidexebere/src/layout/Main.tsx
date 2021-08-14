@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ResponseData } from '../api/fetchData';
 import Pagination from '../components/Pagination';
+import Placeholder from '../components/Placeholder';
 import Product from '../components/Product';
 
 interface MainProps {
@@ -61,10 +62,13 @@ const Main = ({
   console.log(isLoading);
 
   return (
-    <main>
+    <main className="main">
+      {/* shows placeholders as data is being fetched */}
       {isLoading && (
-        <div className="">
-          <p className="">Loading ...</p>
+        <div className="products__cover">
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
+            <Placeholder key={index} />
+          ))}
         </div>
       )}
 
@@ -77,7 +81,7 @@ const Main = ({
 
       {/* shows 10 posts on initial render */}
       {!isLoading && !isError && pages === 1 && (
-        <>
+        <div className="products__cover">
           {products.map((product) => (
             <Product
               key={product.id}
@@ -85,13 +89,13 @@ const Main = ({
               productImageUrl={product.images[0].object_url}
             />
           ))}
-        </>
+        </div>
       )}
 
       {/* show the pages, 10 posts at a time */}
       {!isLoading && !isError && pages > 1 && (
         <div>
-          <div className="">
+          <div className="products__cover">
             {getPaginatedData().map((product) => (
               <Product
                 key={product.id}

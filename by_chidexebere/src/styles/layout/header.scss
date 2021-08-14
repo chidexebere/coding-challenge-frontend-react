@@ -1,0 +1,13 @@
+.header {
+  &__title {
+    text-align: center;
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

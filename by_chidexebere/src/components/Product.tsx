@@ -10,15 +10,17 @@ const Product = ({
   productName,
 }: ProductProps): JSX.Element => {
   return (
-    <div className="">
-      <img
-        src={productImageUrl}
-        loading="lazy"
-        width="180"
-        height="180"
-        alt={productName}
-      />
-      <p className="">{productName}</p>
+    <div className="product">
+      <div className="product__image">
+        <img
+          src={productImageUrl}
+          loading="lazy"
+          width="120"
+          height="90"
+          alt={productName}
+        />
+      </div>
+      <p className="product__name">{productName}</p>
     </div>
   );
 };

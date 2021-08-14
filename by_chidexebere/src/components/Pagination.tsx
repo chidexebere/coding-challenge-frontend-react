@@ -33,7 +33,7 @@ const Pagination = ({
         <Button
           key={index}
           handleClick={changePage}
-          variant={currentPage === item ? 'active' : ''}
+          variant={`controls ${currentPage === item ? 'active' : ''}`}
         >
           <span>{item}</span>
         </Button>

@@ -11,9 +11,11 @@ const Footer = ({
   loadMoreProducts,
 }: FooterProps): JSX.Element => {
   return (
-    <footer className="">
+    <footer className="footer">
       {hasMoreProduct && (
-        <Button handleClick={loadMoreProducts}>Load More</Button>
+        <Button handleClick={loadMoreProducts} variant={`primary`}>
+          Load More
+        </Button>
       )}
     </footer>
   );
