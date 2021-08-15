@@ -2,9 +2,9 @@ import React from 'react';
 import Button from '../components/Button';
 
 interface FooterProps {
-  hasMoreProduct: boolean;
-  loadMoreProducts: () => void;
-  noSearchResult: boolean;
+  hasMoreProduct?: boolean;
+  loadMoreProducts?: () => void;
+  noSearchResult?: boolean;
 }
 
 const Footer = ({

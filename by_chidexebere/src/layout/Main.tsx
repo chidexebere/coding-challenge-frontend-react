@@ -59,7 +59,7 @@ const Main = ({
   };
 
   return (
-    <main className="main">
+    <main className="main" data-testid="main">
       {/* shows placeholders as data is being fetched */}
       {isLoading && (
         <div className="products__cover">
@@ -82,9 +82,10 @@ const Main = ({
 
       {/* shows 10 posts on initial render */}
       {!isLoading && !isError && pages === 1 && (
-        <div className="products__cover">
+        <div className="products__cover" data-testid="products">
           {products.map((product) => (
             <Product
+              data-testid="product"
               key={product.id}
               productName={product.product_name}
               productImageUrl={product.images[0].object_url}
@@ -96,9 +97,10 @@ const Main = ({
       {/* show the pages, 10 posts at a time */}
       {!isLoading && !isError && pages > 1 && (
         <div>
-          <div className="products__cover">
+          <div className="products__cover" data-testid="products">
             {getPaginatedData().map((product) => (
               <Product
+                data-testid="product"
                 key={product.id}
                 productName={product.product_name}
                 productImageUrl={product.images[0].object_url}

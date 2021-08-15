@@ -11,7 +11,7 @@ const SearchBar = ({
   handleSearch,
   clearSearchInput,
 }: SearchBarProps): JSX.Element => (
-  <form className="search">
+  <form className="search" role="form">
     <span className="search__icon">
       <svg
         className="icon"
