@@ -60,16 +60,22 @@ function App(): JSX.Element {
     );
   };
 
-  // console.log(productData);
+  const clearSearchInput = () => {
+    setSearchValue('');
+    setProducts(productData);
+  };
 
-  // const products = data.data.data;
   const hasMoreProduct = data.data.meta.hasMoreData;
   const dataLimit = 10;
   const pages = Math.ceil(products.length / dataLimit);
 
   return (
     <div className="App">
-      <Header searchValue={searchValue} handleSearch={handleSearch} />
+      <Header
+        searchValue={searchValue}
+        handleSearch={handleSearch}
+        clearSearchInput={clearSearchInput}
+      />
       <Main
         products={products}
         hasMoreProduct={hasMoreProduct}
