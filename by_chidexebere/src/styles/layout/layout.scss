@@ -22,3 +22,33 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.large {
+  width: 12rem;
+  height: 12rem;
+}
+
+.offline,
+.no-result {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.offline__text {
+  font-size: 2rem;
+}
+
+.no-result__text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.no-result__icon {
+  margin: 1rem 0;
+}

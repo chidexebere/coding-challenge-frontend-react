@@ -12,6 +12,7 @@ interface MainProps {
   searchValue?: string | number;
   isLoading: boolean;
   isError: boolean;
+  noSearchResult: boolean;
 }
 
 const Main = ({
@@ -21,6 +22,7 @@ const Main = ({
   searchValue,
   isLoading,
   isError,
+  noSearchResult,
 }: MainProps): JSX.Element => {
   const pageLimit = 5;
   const [currentPage, setCurrentPage] = useState(1);
@@ -56,11 +58,6 @@ const Main = ({
     return pageGroup;
   };
 
-  console.log(products);
-  console.log(searchValue);
-  console.log(isError);
-  console.log(isLoading);
-
   return (
     <main className="main">
       {/* shows placeholders as data is being fetched */}
@@ -73,9 +70,13 @@ const Main = ({
       )}
 
       {isError && (
-        <div className="">
-          <p className="">Something went wrong, can not get product list</p>
-          <p className="">Please check your internet connection</p>
+        <div className="offline">
+          <p className="offline__text">
+            Something went wrong, we could not get product list
+          </p>
+          <p className="offline__text">
+            Please check your internet connection ...
+          </p>
         </div>
       )}
 
@@ -115,11 +116,12 @@ const Main = ({
         </div>
       )}
 
-      {!isLoading && !isError && searchValue !== '' && products === [] && (
-        <div>
-          <div>
+      {/* show this if there is no search result */}
+      {!isLoading && !isError && noSearchResult && (
+        <div className="no-result">
+          <div className="no-result__icon">
             <svg
-              className="w-6 h-6"
+              className="icon large"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +133,9 @@ const Main = ({
               ></path>
             </svg>
           </div>
-          <p>No result found for {searchValue} product</p>
+          <p className="no-result__text">
+            {`No result found for "${searchValue}" Product`}
+          </p>
         </div>
       )}
     </main>

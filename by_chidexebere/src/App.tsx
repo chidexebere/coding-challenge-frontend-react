@@ -28,12 +28,10 @@ function App(): JSX.Element {
 
   const getData = async (cursor: number, limit: number) => {
     let newData: ResponseObject;
-    // setIsError(false);
     setIsLoading(true);
     try {
       newData = await fetchData(cursor, limit);
       setData(newData);
-      // setData((prevData) => Object.assign({}, prevData, newData));
       setProducts(newData.data.data);
       setProductData(newData.data.data);
     } catch (error) {
@@ -65,6 +63,9 @@ function App(): JSX.Element {
     setProducts(productData);
   };
 
+  const noSearchResult =
+    products.length === 0 && searchValue !== '' ? true : false;
+
   const hasMoreProduct = data.data.meta.hasMoreData;
   const dataLimit = 10;
   const pages = Math.ceil(products.length / dataLimit);
@@ -84,10 +85,12 @@ function App(): JSX.Element {
         searchValue={searchValue}
         isError={isError}
         isLoading={isLoading}
+        noSearchResult={noSearchResult}
       />
       <Footer
         hasMoreProduct={hasMoreProduct}
         loadMoreProducts={loadMoreProducts}
+        noSearchResult={noSearchResult}
       />
     </div>
   );
