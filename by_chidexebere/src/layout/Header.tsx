@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar';
 interface HeaderProps {
   searchValue?: string | number;
   handleSearch?: (event: React.SyntheticEvent) => void;
-  clearSearchInput: () => void;
+  clearSearchInput?: () => void;
 }
 
 const Header = ({

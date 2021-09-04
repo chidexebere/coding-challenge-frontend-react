@@ -1,0 +1,678 @@
+{
+  "statusCode": 200,
+  "requestId": "b316a798-98f8-40b8-80d8-6297a3658a9c",
+  "status": "SUCCESS",
+  "logStreamName": "2021/08/31/[$LATEST]4db2ae149e694365be9389a3c3b34204",
+  "data": {
+    "data": [
+      {
+        "id": 55,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 2",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#F9A800"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#F9A800",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985194748_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ],
+        "total_amount": 10,
+        "amount_unit": "mm²"
+      },
+      {
+        "id": 57,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 1",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "original_price": 18,
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          },
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "weight_per_unit": "10",
+        "images": [
+          {
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 3",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985208553_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 4",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985216938_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 5",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985216938_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 6",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985216938_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+          "label": "Wall Covering",
+          "value": "eefc5643-7d5a-4084-8e27-8d12304ac3bb"
+        },
+        "product_group_id": "eefc5643-7d5a-4084-8e27-8d12304ac3bb",
+        "product_group_name": "Wall Covering",
+        "manufacturer": "ABC-Klinker",
+        "product_name": "Product 7",
+        "ean": "ABC-DBEHD2021",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": true,
+          "isRalColorMatched_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": true,
+          "Shank uf_829a143e-17db-4937-88a2-7c7fe41c9816_::specification-field::_35383e50-b363-4569-8c0a-aa3d4bf06552": {
+            "unit": "m2",
+            "unitValue": "3"
+          },
+          "Unit Field_d48ea611-fe2f-47c0-8744-c39daaff47cf_::specification-field::_28289b20-45a8-42a9-91b3-46fa29db37b6": {
+            "unit": "m2",
+            "unitValue": "2"
+          },
+          "Color Swatch_d002d623-ea25-4f72-81d5-43ca5a4da474_::specification-field::_acd6d872-7fdb-4f92-804a-58005178a0f3": "#D0B084",
+          "Shashank color_faefb7b7-6a73-4258-8bdd-d07966566e29_::specification-field::_83b247f9-6f53-469f-8575-0d0994b53c11": "#D2AA6D"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "mm²",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Shank uf": {
+              "unit": "m2",
+              "unitValue": "3"
+            }
+          },
+          {
+            "Unit Field": {
+              "unit": "m2",
+              "unitValue": "2"
+            }
+          },
+          {
+            "Color Swatch": "#D0B084",
+            "isRalColorMatched": true
+          },
+          {
+            "Shashank color": "#D2AA6D",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985216938_0__",
+            "file_name": "country-house-door-pine-wood.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/2e8fb6f4-bfff-4110-8ecd-f8df22252d6d_1627985157947/material_images/country_house_door_pine_wood_jpeg_deff26e8-0b1a-42e7-a6d4-7258b9cf4a94.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+          "label": "Line Tiles (PGR)",
+          "value": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4"
+        },
+        "product_group_id": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+        "product_group_name": "Line Tiles (PGR)",
+        "manufacturer": "Abel",
+        "product_name": "Product 8",
+        "ean": "PRO-2092-ABDS",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": true,
+          "isRalColorMatched_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": true,
+          "Color Swatch_c2dcfb1b-218c-4fc4-9007-ed92c5aa94c7_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": "#9B2423",
+          "Color Swatch_d325acc4-ef78-409b-8b3c-a6a5c9aaebac_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": "#C73F4A"
+        },
+        "original_price": 100,
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "Stück",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Color Swatch": "#C73F4A",
+            "isRalColorMatched": true
+          },
+          {
+            "Color Swatch": "#9B2423",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "weight_per_unit": "22",
+        "images": [
+          {
+            "file_name": "timber-window-glazing-bars.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+          "label": "Line Tiles (PGR)",
+          "value": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4"
+        },
+        "product_group_id": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+        "product_group_name": "Line Tiles (PGR)",
+        "manufacturer": "Abel",
+        "product_name": "Product 9",
+        "ean": "PRO-2092-ABDS",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": true,
+          "isRalColorMatched_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": true,
+          "Color Swatch_c2dcfb1b-218c-4fc4-9007-ed92c5aa94c7_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": "#9B2423",
+          "Color Swatch_d325acc4-ef78-409b-8b3c-a6a5c9aaebac_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": "#C73F4A"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "Stück",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Color Swatch": "#9B2423",
+            "isRalColorMatched": true
+          },
+          {
+            "Color Swatch": "#C73F4A",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985334590_0__",
+            "file_name": "timber-window-glazing-bars.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "category_id": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001",
+        "category_name": "Doors",
+        "categories": {
+          "root": "19436e57-515c-474b-83bf-a55d6480ac80",
+          "19436e57-515c-474b-83bf-a55d6480ac80": "db226699-4d4f-4a0a-b2d7-f56ecdaa7001"
+        },
+        "product_group": {
+          "key": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+          "label": "Line Tiles (PGR)",
+          "value": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4"
+        },
+        "product_group_id": "f20869b0-a00a-46a8-ba3c-c8cdc34933a4",
+        "product_group_name": "Line Tiles (PGR)",
+        "manufacturer": "Abel",
+        "product_name": "Product 10",
+        "ean": "PRO-2092-ABDS",
+        "materials": [],
+        "documents": [],
+        "specification": {
+          "isRalColorMatched_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": true,
+          "isRalColorMatched_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": true,
+          "Color Swatch_c2dcfb1b-218c-4fc4-9007-ed92c5aa94c7_::specification-field::_ce008e23-a570-4d9f-9b34-01004a620b62": "#9B2423",
+          "Color Swatch_d325acc4-ef78-409b-8b3c-a6a5c9aaebac_::specification-field::_d38644c2-d377-493f-8cbc-b84f8b7845da": "#C73F4A"
+        },
+        "building_location_of": "Demo Building",
+        "material_current_location": "Qui molestias soluta 11 Cum sit quis dicta  - Officia delectus te",
+        "product_unit": "Stück",
+        "building_id": "BUILDING_RECORD___d4be9613-0192-4ff1-8c08-b3f35dce808d___1627981652164",
+        "specification_group": [
+          {
+            "Color Swatch": "#9B2423",
+            "isRalColorMatched": true
+          },
+          {
+            "Color Swatch": "#C73F4A",
+            "isRalColorMatched": true
+          }
+        ],
+        "available_for_sell": 1,
+        "available_for_sell_until": "2022-06-29T00:00:00.000Z",
+        "images": [
+          {
+            "uid": "__AUTO__1627985345937_0__",
+            "file_name": "timber-window-glazing-bars.jpeg",
+            "file_path": "78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "object_url": "https://asterix-dev-material-assets-folder.s3.eu-central-1.amazonaws.com/78be8ca8-acdd-4373-84aa-0566eea71b02/7de4de1b-becf-4b41-ad88-46ddb013ea6c_1627985317237/material_images/timber_window_glazing_bars_jpeg_684ef276-e2cd-49d3-b602-0174bd16f33b.jpeg",
+            "bucket_name": "asterix-dev-material-assets-folder"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "hasMoreData": true,
+      "cursor": 65
+    }
+  }
+}

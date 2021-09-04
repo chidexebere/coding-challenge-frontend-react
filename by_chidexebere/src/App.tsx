@@ -36,12 +36,34 @@ function App(): JSX.Element {
       setProductData(newData.data.data);
     } catch (error) {
       setIsError(true);
+      // console.log(error);
     }
     setIsLoading(false);
   };
 
   useEffect(() => {
-    getData(0, 10);
+    // getData(0, 10);
+    let mounted = true;
+    (async () => {
+      let newData: ResponseObject;
+      setIsLoading(true);
+      try {
+        newData = await fetchData(0, 10);
+        if (mounted) {
+          setData(newData);
+          setProducts(newData.data.data);
+          setProductData(newData.data.data);
+        }
+      } catch (error) {
+        setIsError(true);
+        console.log(error);
+      }
+      setIsLoading(false);
+    })();
+
+    return function cleanup() {
+      mounted = false;
+    };
   }, []);
 
   const loadMoreProducts = () => {

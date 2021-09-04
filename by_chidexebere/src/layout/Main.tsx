@@ -62,42 +62,28 @@ const Main = ({
     <main className="main" data-testid="main">
       {/* shows placeholders as data is being fetched */}
       {isLoading && (
-        <div className="products__cover">
+        <section className="products__cover" role="alert" aria-label="loading">
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
             <Placeholder key={index} />
           ))}
-        </div>
+        </section>
       )}
 
       {isError && (
-        <div className="offline">
+        <section className="offline" role="alert" aria-label="error">
           <p className="offline__text">
             Something went wrong, we could not get product list
           </p>
           <p className="offline__text">
             Please check your internet connection ...
           </p>
-        </div>
-      )}
-
-      {/* shows 10 posts on initial render */}
-      {!isLoading && !isError && pages === 1 && (
-        <div className="products__cover" data-testid="products">
-          {products.map((product) => (
-            <Product
-              data-testid="product"
-              key={product.id}
-              productName={product.product_name}
-              productImageUrl={product.images[0].object_url}
-            />
-          ))}
-        </div>
+        </section>
       )}
 
       {/* show the pages, 10 posts at a time */}
-      {!isLoading && !isError && pages > 1 && (
-        <div>
-          <div className="products__cover" data-testid="products">
+      {!isLoading && !isError && (
+        <>
+          <section role="list" className="products__cover">
             {getPaginatedData().map((product) => (
               <Product
                 data-testid="product"
@@ -106,21 +92,23 @@ const Main = ({
                 productImageUrl={product.images[0].object_url}
               />
             ))}
-          </div>
-          <Pagination
-            currentPage={currentPage}
-            pages={pages}
-            goToPreviousPage={goToPreviousPage}
-            goToNextPage={goToNextPage}
-            getPaginationGroup={getPaginationGroup}
-            changePage={changePage}
-          />
-        </div>
+          </section>
+          {pages > 1 && (
+            <Pagination
+              currentPage={currentPage}
+              pages={pages}
+              goToPreviousPage={goToPreviousPage}
+              goToNextPage={goToNextPage}
+              getPaginationGroup={getPaginationGroup}
+              changePage={changePage}
+            />
+          )}
+        </>
       )}
 
       {/* show this if there is no search result */}
       {!isLoading && !isError && noSearchResult && (
-        <div className="no-result">
+        <section className="no-result" role="alert" aria-label="no-result">
           <div className="no-result__icon">
             <svg
               className="icon large"
@@ -136,9 +124,9 @@ const Main = ({
             </svg>
           </div>
           <p className="no-result__text">
-            {`No result found for "${searchValue}" Product`}
+            {`No result found for '${searchValue}' Product`}
           </p>
-        </div>
+        </section>
       )}
     </main>
   );

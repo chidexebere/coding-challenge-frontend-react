@@ -100,6 +100,11 @@ export const fetchData = async (
     },
     body: JSON.stringify(requestBody),
   });
-  const fetchResponse = await (await fetchRequest).json();
-  return fetchResponse;
+  const response = await fetchRequest;
+
+  if (response.status == 200) {
+    const jsonResponse = await response.json();
+    return jsonResponse;
+  }
+  throw new Error(response.statusText);
 };

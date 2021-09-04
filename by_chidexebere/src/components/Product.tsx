@@ -10,7 +10,7 @@ const Product = ({
   productName,
 }: ProductProps): JSX.Element => {
   return (
-    <div className="product">
+    <div role="listitem" className="product">
       <div className="product__image">
         <img
           src={productImageUrl}

@@ -1,9 +1,9 @@
 import React, { ComponentProps } from 'react';
 
-interface SearchBarProps extends ComponentProps<'input'> {
+interface SearchBarProps extends ComponentProps<'form'> {
   searchValue?: string | number;
   handleSearch?: (event: React.SyntheticEvent) => void;
-  clearSearchInput: () => void;
+  clearSearchInput?: () => void;
 }
 
 const SearchBar = ({
