@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react';
-import Pagination from '../components/Pagination';
-import Placeholder from '../components/Placeholder';
-import Product from '../components/Product';
 import { AppContext } from '../state/context';
+
+import ErrorPage from '../pages/ErrorPage';
+import LoadingPage from '../pages/LoadingPage';
+import NoSearchResultPage from '../pages/NoSearchResultPage';
+import ProductsPage from '../pages/ProductsPage';
 
 const Main = (): JSX.Element => {
   const { state } = useContext(AppContext);
@@ -48,74 +50,29 @@ const Main = (): JSX.Element => {
   };
 
   return (
-    <main className="main" data-testid="main">
+    <main className="main">
       {/* shows placeholders as data is being fetched */}
-      {isLoading && (
-        <section className="products__cover" role="alert" aria-label="loading">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
-            <Placeholder key={index} />
-          ))}
-        </section>
-      )}
+      {isLoading && <LoadingPage />}
 
-      {isError && (
-        <section className="offline" role="alert" aria-label="error">
-          <p className="offline__text">
-            Something went wrong, we could not get product list
-          </p>
-          <p className="offline__text">
-            Please check your internet connection ...
-          </p>
-        </section>
-      )}
+      {/* shows errors on error page */}
+      {isError && <ErrorPage />}
 
       {/* show the pages, 10 posts at a time */}
       {!isLoading && !isError && (
-        <>
-          <section role="list" className="products__cover">
-            {getPaginatedData().map((product) => (
-              <Product
-                data-testid="product"
-                key={product.id}
-                productName={product.product_name}
-                productImageUrl={product.images[0].object_url}
-              />
-            ))}
-          </section>
-          {pages > 1 && (
-            <Pagination
-              currentPage={currentPage}
-              pages={pages}
-              goToPreviousPage={goToPreviousPage}
-              goToNextPage={goToNextPage}
-              getPaginationGroup={getPaginationGroup}
-              changePage={changePage}
-            />
-          )}
-        </>
+        <ProductsPage
+          currentPage={currentPage}
+          pages={pages}
+          goToPreviousPage={goToPreviousPage}
+          goToNextPage={goToNextPage}
+          getPaginationGroup={getPaginationGroup}
+          getPaginatedData={getPaginatedData}
+          changePage={changePage}
+        />
       )}
 
       {/* show this if there is no search result */}
       {!isLoading && !isError && noSearchResult && (
-        <section className="no-result" role="alert" aria-label="no-result">
-          <div className="no-result__icon">
-            <svg
-              className="icon large"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <p className="no-result__text">
-            {`No result found for '${searchValue}' Product`}
-          </p>
-        </section>
+        <NoSearchResultPage searchValue={searchValue} />
       )}
     </main>
   );
