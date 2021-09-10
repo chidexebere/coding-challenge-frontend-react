@@ -4,7 +4,7 @@ import Footer from '../layout/Footer';
 
 describe('<Footer /> when rendered with `hasMoreProduct` prop', () => {
   it('should display Load More button only when more product exist', () => {
-    render(<Footer hasMoreProduct={true} />);
+    render(<Footer />);
 
     expect(
       screen.getByRole('button', { name: /Load More/i }),

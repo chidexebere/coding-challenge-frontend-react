@@ -38,7 +38,9 @@ const AppContextProvider = ({ children }: AppContextProps): JSX.Element => {
       } catch (error) {
         dispatch({ type: GET_API_DATA_FAILURE });
       }
-      dispatch({ type: LOADING_API_DATA_DONE });
+      if (mounted) {
+        dispatch({ type: LOADING_API_DATA_DONE });
+      }
     })();
 
     return function cleanup() {
