@@ -1,31 +1,20 @@
-import React, { useState } from 'react';
-import { ResponseData } from '../api/fetchData';
+import React, { useContext, useState } from 'react';
 import Pagination from '../components/Pagination';
 import Placeholder from '../components/Placeholder';
 import Product from '../components/Product';
+import { AppContext } from '../state/context';
 
-interface MainProps {
-  products: ResponseData[];
-  hasMoreProduct: boolean;
-  pages: number;
-  dataLimit: number;
-  searchValue?: string | number;
-  isLoading: boolean;
-  isError: boolean;
-  noSearchResult: boolean;
-}
+const Main = (): JSX.Element => {
+  const { state } = useContext(AppContext);
+  const { isLoading, isError, products, searchValue } = state;
 
-const Main = ({
-  products,
-  pages,
-  dataLimit,
-  searchValue,
-  isLoading,
-  isError,
-  noSearchResult,
-}: MainProps): JSX.Element => {
   const pageLimit = 5;
+  const dataLimit = 10;
+  const pages = Math.ceil(products.length / dataLimit);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const noSearchResult =
+    products.length === 0 && searchValue !== '' ? true : false;
 
   const goToNextPage = () => {
     setCurrentPage((page) => page + 1);
